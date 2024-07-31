@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>jk playway school</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        ul{
+            background-color: rgb(223, 248, 83);
+            height:100px;
+            list-style-type: none;
+           
+
+        }
+        li{
+            float: left;
+            margin-top: 0;
+        }
+         ul li .home:active{
+           background-color: antiquewhite;
+
+        }
+        li a{
+            text-decoration: none;
+            color: rgb(70, 0, 168);
+            font-size:30px;
+            
+            margin:20px;
+            background-color: rgb(203, 216, 14);
+            padding: 15px;
+        }
+        .school{
+            background-color: antiquewhite;
+            padding: 20px;
+            font-size: 20px;
+            height:60px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        .item1{
+            float: right;
+            
+        }
+       .item1 a{
+        background-color: rgb(230, 226, 236);
+
+        }
+        i a {
+            text-decoration: none;
+            padding: 10px;
+        }
+        .container1{
+            background-image: url(school_pic-1.jpg);
+            height:800px;
+            background-size: cover;
+            cursor: pointer;
+        }
+        .item2 pre{
+            font-size:50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:rgb(172, 104, 21);
+            text-decoration: underline;
+            font-weight:bold;
+            text-shadow: 10px 0px rgba(172,104,21,0.2);
+            
+            
+        }
+    .item2 p{
+            font-size:50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:purple;
+            text-decoration: underline;
+            font-weight:bold;
+            margin-top: 200px;
+            text-shadow: 5px 0px rgba(150,6,149,0.4);
+        }
+        .item2 button{
+            background-color: rgb(145, 6, 145);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding:15px;
+            font-size: 20px;
+            color:whitesmoke;
+            box-shadow: 5px 10px rgba(150,6,149,0.9);
+            cursor: pointer;
+        }
+        p1{
+            color:rgba(150,6,149,0.7);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 50px;
+        }
+        .container2{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .item3{
+           flex:25%;
+          max-width: 25%;
+          margin-top: 10px;
+          margin-left: 10px;
+          
+          background-color: antiquewhite;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          object-fit: cover;
+        }
+        .item4{
+            flex:25%;
+            max-width:25%;
+            margin-top:10px;
+            margin-left: 10px;
+           
+            background-color: antiquewhite;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            object-fit: cover;
+        }
+        .item5{
+            flex:25%;
+            max-width:25%;
+            margin-top:10px;
+            margin-left: 10px;
+           
+            background-color: antiquewhite;
+            height:100px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            object-fit: contain;
+        }
+        .item6{
+            flex:25%;
+            max-width:25%;
+            margin-top:10px;
+            margin-left: 10px;
+           
+            background-color: antiquewhite;
+            height:100px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            object-fit: cover;
+        }
+        .footer{
+            background-image: url(school_pic_2.jpg);
+            height:200px;
+            background-size: cover;;
+            margin-top: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            color:rgb(74, 245, 7);
+            font-weight: bold;
+            font-weight: bold;
+            text-shadow: 5px 0px rgba(172,104,21,0.2);
+        }
+        .dropdown-content{
+            background-color: rgb(197, 211, 211);
+           width: 200px;
+            color:black;
+            position:relative;
+            left:100px;
+            object-fit: cover;
+            visibility:hidden;
+        }
+        .dropdown-content a{
+            
+            display:block;
+            font-size:20px;
+            padding: 2px;
+            text-align: center;
+            width: 200px;
+            height:20px;
+            margin: 0px;
+            object-fit: cover;
+            border-bottom: 2px solid rgb(189, 148, 148);
+        }
+        .dropdown-content a:hover{
+            background-color: rgb(167, 97, 7);
+        }
+        .dropdown:hover .dropdown-content{
+            visibility: visible;
+
+        }
+       
+    </style>
+</head>
+<body >
+    <div class="container">
+        <ul>
+            <li class="school">Junior kids playway school</li>
+            <li><a href="http://127.0.0.1:5500/fivth_page.html" class="home">Home</a></li>
+            <li class="dropdown"><a href="#" class="dropbtn">About us</a>
+            <div class="dropdown-content" >
+                <a href="#" class="principal">Principal</a>
+                <a href="https://maps.app.goo.gl/rCbb81sXtGHtfBsq7" target="_blank">Location</a>
+                <a href="" target="_blank">Establishment 2009</a>
+                
+            </div>
+            </li>
+            <li class="dropdown"><a href="#" class="dropbtn">Contacts</a>
+                <div class="dropdown-content" style="width:200px">
+                    <a href="#" class="fa fa-phone" style="width: 200px;">School Office</a>
+                    
+                    
+                    <a href="#" class="fa fa-phone" style="width: 200px;">AlternateNumber</a>
+                    <a   target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGKZPfNDWHknVCvjgLzlwmBdwJfDGQPQHsxqPHpvtVjLGHGPbZWLWqqLsvKWVMDHcPRJBrW" class="fa fa-envelope" style="width: 200px;">Email us</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="#" class="dropbtn">Admission</a>
+            <div class="dropdown-content">
+                <a href="#" class="fa fa-money">  Pay fees online</a>
+            </div></li>
+       
+            <div class="item1">
+            <input type="text" placeholder="Search" >
+            <button class="fa fa-search">submit</button>
+            </div>
+        </ul>
+    </div>
+    <div class="container1">
+        <span class="item2" >
+        <pre>Build a foundation 
+            for the lifetime of the learning</pre>
+            <p>Admission Open<br><button>Enrol now</button></p><br>
+            <p1 style="font-size: 30px;">pre-nursery| Nursery | LKG | UKG</p1>
+        </span>
+    </div>
+    <div class="container2">
+        <div class="item3">
+            
+            <p><img src="All_teachers.jpg" style="width:100%;">Picture of the Annual day function</p>
+            
+            <P><img src="Award_winning.jpg" style="width:100%;">Award giving at school</p>
+        </div>
+                <div class="item4">
+                <p><img src="Award_winning_2.jpg" style="width:100%;">Award giving at school</p>
+                <p><img src="School_pic.jpg" style="width:100%;">School picture</p>
+        </div>
+
+        
+        <div class="item5">
+            <p><img src="Independence_Day.jpg" style="width:100%;">Independence day celebration</p>
+            <p><img src="School_picnic.jpg" style="width:100%;">School picnic at Baghabahu</p>
+        </div>
+        <div class="item6">
+            <p><img src="School_pic_3.jpg" style="width:100%;">Fancy dress competition</p>
+        </div>
+        </div>
+<div class="footer">
+<pre>Children in this age group as identified as Toddlers. 
+    Children are born curious. 
+    They begin to explore the environment around them as soon as they are born.</pre>
+    <i style="color:brown; font-size: 30px;">Contact us on: </i>
+    <i style="color:brown; font-size: 30px; margin-left: 10px;" class="fa fa-phone">7006171451</i><br>
+    <i style="color:brown; font-size: 30px;">Email us:</i>
+    <i style="color:brown; font-size: 30px;" class="fa fa-envelope">Sethisarthak@gmail.com</i>
+</div>
+ 
